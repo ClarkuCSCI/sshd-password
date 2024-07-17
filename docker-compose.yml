@@ -1,6 +1,7 @@
 services:
   sshd:
     build: "."
+    image: peterstory/sshd-password
     environment:
       - ROOT_PASSWORD
     ports:
